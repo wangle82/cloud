@@ -1,0 +1,18 @@
+
+
+
+## Eureka Server 服务 URL,用于客户端注册
+eureka:
+  client:
+    serviceUrl:
+      # eureka服务器的高可用  注册服务器间互相注册
+      defaultZone: http://localhost:9091/eureka
+    # 注册服务器自身也上报
+    register-with-eureka: true
+    # 抓取其他注册服务器信息
+    fetch-registry: true
+
+
+
+
+

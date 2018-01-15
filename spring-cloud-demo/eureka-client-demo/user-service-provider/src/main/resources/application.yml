@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: user-service-provider
+  cloud:
+      stream:
+        kafka:
+          binder:
+            autoCreateTopics: false
+#spring.cloud.stream.kafka.binder
+
+#  datasource:
+#    driver-class-name:
+#    url:
+#    username:
+#    password:
+#  jpa:
+#    show-sql:
+#    generate-ddl:
+
+#   springboot http端口    简单理解为业务的内网服务端口
+server:
+  port: 7070
+## Eureka Server 服务 URL,用于客户端注册
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9090/eureka
+
+
+
+
+
